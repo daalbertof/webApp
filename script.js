@@ -23,17 +23,15 @@ async function getAllRecords() {
         let song = data.records[i].fields["Song"];
         let genre = data.records[i].fields["Genre"];
 
-
-
-
-
         newHtml += `
         
-        <div class="col cardImageText p-5">
+        <div class="col cardImageText song-card center">
+        <img src="${artistPhoto[0].url}" class="artists-img"></img>
+        <div class="card-text">
         <div>${name}</div>
         <div>${song}</div>
         <div>${genre}</div>
-        <img src="${artistPhoto[0].url}"></img>
+        </div>
         </div>
 
 
@@ -46,7 +44,7 @@ async function getAllRecords() {
     });
 }
 
-async function getAllRecords(id) {
+/*<async function getAllRecords(id) {
   let getResultElement = document.getElementById("artists");
 
   const options = {
@@ -92,6 +90,6 @@ async function getAllRecords(id) {
 
       getResultElement.innerHTML = newHtml;
     });
-}
+}*/
 
 getAllRecords();

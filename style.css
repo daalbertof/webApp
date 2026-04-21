@@ -1,5 +1,5 @@
 .color{
-    background-color: rgb(248, 250, 251);
+    background-color: rgb(114, 109, 95);
 }
 
 .tittle-card{
@@ -7,15 +7,39 @@
     background-position: 80px;
     background-size: 800px;
     size-adjust: 400px;
+    
 }
 
 h1{
     text-align: center;
-    
-    
 }
 
 .song-card{
-    
+    background-image: url("cd.png");
+    background-size: 595px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.center{
+    background-position: center;
+    position: relative;
+    text-align: center;
+
+}
+
+.artists-img{    
+    position: relative;
+    left: 35px;
+    top: 30px;
+}
+
+
+
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
 }
 
