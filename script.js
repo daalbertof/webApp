@@ -28,7 +28,8 @@ async function getAllRecords() {
         
         <div class="col cardImageText p-5 song-card center">
         <a href = "details.html?id=${data.records[i].id}">${
-          album ? `<img src="${album[0].url}" class="artists-img"></img>` : ``
+          album ? `<img src="${album[0].url}" class="artists-img"></img>` 
+          : ``
         }
                 </a>
 
