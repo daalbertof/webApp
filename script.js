@@ -22,17 +22,25 @@ async function getAllRecords() {
         let name = data.records[i].fields["Name"]; //here we are using the Field ID to fecth the name property
         let song = data.records[i].fields["Song"];
         let genre = data.records[i].fields["Genre"];
+        let album = data.records[i].fields["AlbumPhoto1"];
 
         newHtml += `
         
-        <div class="col cardImageText song-card center">
-        <img src="${artistPhoto[0].url}" class="artists-img"></img>
-        <div class="card-text">
+        <div class="col cardImageText p-5 song-card center">
+        <a href = "details.html?id=${data.records[i].id}">${
+          album ? `<img src="${album[0].url}" class="artists-img"></img>` : ``
+        }
+                </a>
+
+        </div>
+      
+        <div class="info">
         <div>${name}</div>
         <div>${song}</div>
         <div>${genre}</div>
         </div>
         </div>
+        
 
 
     
@@ -44,7 +52,7 @@ async function getAllRecords() {
     });
 }
 
-/*<async function getAllRecords(id) {
+ async function getOneRecord(id) {
   let getResultElement = document.getElementById("artists");
 
   const options = {
@@ -90,6 +98,6 @@ async function getAllRecords() {
 
       getResultElement.innerHTML = newHtml;
     });
-}*/
+}
 
 getAllRecords();

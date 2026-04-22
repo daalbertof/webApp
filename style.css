@@ -1,5 +1,5 @@
 .color{
-    background-color: rgb(114, 109, 95);
+    background-color: rgb(237, 237, 236);
 }
 
 .tittle-card{
@@ -16,7 +16,7 @@ h1{
 
 .song-card{
     background-image: url("cd.png");
-    background-size: 595px;
+    background-size: 600px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -31,9 +31,15 @@ h1{
 .artists-img{    
     position: relative;
     left: 35px;
-    top: 30px;
+    top: -7px;
+    border-radius: 10px;
+    border: 6px solid #ddd;
 }
 
+.info{
+    background-repeat: no-repeat;
+    text-align: center;
+}
 
 
 .dm-sans {
