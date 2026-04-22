@@ -42,8 +42,6 @@ async function getAllRecords() {
         </div>
         
 
-
-    
         
         `;
       }
@@ -51,6 +49,7 @@ async function getAllRecords() {
       getResultElement.innerHTML = newHtml;
     });
 }
+
 
  async function getOneRecord(id) {
   let getResultElement = document.getElementById("artists");
@@ -78,9 +77,6 @@ async function getAllRecords() {
         let genre = data.records[i].fields["Genre"];
 
 
-
-
-
         newHtml += `
         
         <div class="col cardImageText p-5">
@@ -90,8 +86,6 @@ async function getAllRecords() {
         <img src="${artistPhoto[0].url}"></img>
         </div>
 
-
-    
         
         `;
       }

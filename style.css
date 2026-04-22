@@ -30,9 +30,9 @@ h1{
 
 .artists-img{    
     position: relative;
-    left: 35px;
+    left: 34px;
     top: -7px;
-    border-radius: 10px;
+    border-radius: 11px;
     border: 6px solid #ddd;
 }
 
