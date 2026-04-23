@@ -1,9 +1,9 @@
 .color{
-    background-color: rgb(237, 237, 236);
+    background-color: rgb(223, 223, 221);
 }
 
 .tittle-card{
-    background-color: rgb(216, 222, 222);
+    background-color: rgb(142, 155, 155);
     background-position: 80px;
     background-size: 800px;
     size-adjust: 400px;
@@ -21,10 +21,21 @@ h1{
     background-position: center;
 }
 
+.artists-background{
+    background-image: url("polaroid-Frame.png");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: 370px;
+}
+
 .center{
     background-position: center;
     position: relative;
     text-align: center;
+
+}
+
+.artist-name{
 
 }
 
@@ -33,12 +44,23 @@ h1{
     left: 34px;
     top: -7px;
     border-radius: 11px;
-    border: 6px solid #ddd;
+    border: 6px solid #989191;
+    height: auto;
+}
+
+.artists-img2{    
+    position: relative;
+    left: -10px;
+    top: -15px;
+    width: 300px;
+    height: auto;
+    position: relative;
 }
 
 .info{
     background-repeat: no-repeat;
     text-align: center;
+
 }
 
 
