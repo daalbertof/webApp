@@ -103,7 +103,7 @@ async function getOneRecord(id) {
       musicResultElement.innerHTML = newHtml;
     });
 }
-
+//Nose
 // look up window.location.search and split, so this would take
 // https://dmspr2021-airtable-app.glitch.me/index.html?id=receHhOzntTGZ44I5
 // and look at the ?id=receHhOzntTGZ44I5 part, then split that into an array
