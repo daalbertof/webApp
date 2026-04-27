@@ -75,10 +75,16 @@ async function getOneRecord(id) {
       let genre = data.fields["Genre"];
 
       let newHtml = `
-        <div class="col cardImageText artist-name center p-5">
-        <div>${name}</div>
+        <div class="row cardImageText center p-5">
+        <div class="col info dm-sans">
+        <div class="artist-name">
+            <div>${name}</div>
+        </div>
+
         <div>${song}</div>
         <div>${genre}</div>
+      </div>
+      </div>
         </div>
 
         <div class="rol  p-5 artists-background ">

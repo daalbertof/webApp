@@ -24,7 +24,7 @@ h1{
 .artists-background{
     background-image: url("polaroid-Frame.png");
     background-repeat: no-repeat;
-    background-position-x: left;
+    background-position-x: left 50px;
     background-size: 370px;
 }
 
@@ -36,7 +36,11 @@ h1{
 }
 
 .artist-name{
-
+    background-image: url("rayas.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    font-size: 39px;
 }
 
 .artists-img{    
@@ -48,15 +52,17 @@ h1{
     height: auto;
 }
 
+/*to make the second image smaller and move it to the right*/
 .artists-img2{    
     position: relative;
-    left: -10px;
+    left: 40px;
     top: -15px;
     width: 300px;
     height: auto;
     position: relative;
 }
 
+/*to center the text in the info section*/
 .info{
     background-repeat: no-repeat;
     text-align: center;
@@ -64,6 +70,7 @@ h1{
 }
 
 
+/* DM Sans Font */
 .dm-sans {
   font-family: "DM Sans", sans-serif;
   font-optical-sizing: auto;
