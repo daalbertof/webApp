@@ -73,6 +73,7 @@ async function getOneRecord(id) {
       let name = data.fields["Name"]; //here we are using the Field ID to fecth the name property
       let song = data.fields["Song"];
       let genre = data.fields["Genre"];
+      let songLink = data.fields["SongMP3"];
 
       let newHtml = `
         <div class="row cardImageText center p-5">
@@ -87,17 +88,26 @@ async function getOneRecord(id) {
       </div>
         </div>
 
-        <div class="rol  p-5 artists-background ">
+      <div class="rol  p-5 artists-background ">
         ${
           artistPhoto
             ? `<img class="artists-img2" src="${artistPhoto[0].url}">`
             : ``
         }
-        </div>
 
 
+
+      </div>
+
+     <div class="cardImageText center p-5">   
+    
+        <audio controls>
+              <source src="${songLink[0].url}" type="audio/mpeg">
+              </audio>
+
+     </div>
         
-        `;
+    `;
         
 
       musicResultElement.innerHTML = newHtml;
