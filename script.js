@@ -26,7 +26,7 @@ async function getAllRecords() {
 
         newHtml += `
         
-        <div class="col cardImageText p-3 song-card center">
+        <div class="col cardImageText p-2 song-card center">
         <a href = "index.html?id=${data.records[i].id}">${
           album
             ? `<img class="artists-img" src="${album[0].url}" ></img>` // Add album ALT!!!!!
@@ -77,13 +77,10 @@ async function getOneRecord(id) {
 
       let newHtml = `
         <div class="row cardImageText center p-5">
-        <div class="col info dm-sans">
-        <div class="artist-name">
+        <div class=" info lacquer-regular">
+        <div class="artist-name lacquer-regular ">
             <div>${name}</div>
         </div>
-
-        <div>${song}</div>
-        <div>${genre}</div>
       </div>
       </div>
         </div>
@@ -94,18 +91,16 @@ async function getOneRecord(id) {
             ? `<img class="artists-img2" src="${artistPhoto[0].url}">`
             : ``
         }
-
+     <div class=" col p-5 audio-position">   
+        <audio controls>
+          <source src="${songLink[0].url}" type="audio/mpeg">
+        </audio>
+     </div>
 
 
       </div>
 
-     <div class="cardImageText center p-5">   
-    
-        <audio controls>
-              <source src="${songLink[0].url}" type="audio/mpeg">
-              </audio>
 
-     </div>
         
     `;
         
