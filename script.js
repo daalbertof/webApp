@@ -22,10 +22,10 @@ async function getAllRecords() {
         let name = data.records[i].fields["Name"]; //here we are using the Field ID to fecth the name property
         let song = data.records[i].fields["Song"];
         let genre = data.records[i].fields["Genre"];
-        let album = data.records[i].fields["AlbumPhoto2"];
+        let album = data.records[i].fields["AlbumPhoto1"];
 
         newHtml += `
-        
+
         <div class="col p-5 song-card center">
         <a href = "index.html?id=${data.records[i].id}">${
           album
@@ -34,10 +34,9 @@ async function getAllRecords() {
         }</a>
         </div>
       
-        <div class="info dm-sans">
-        <div>${name}</div>
-        <div>${song}</div>
-        <div>${genre}</div>
+        <div class="info">
+        <div class="font2">${name}</div>
+        <div class="font3">${genre}</div>
         </div>
         </div>
         
@@ -75,45 +74,45 @@ async function getOneRecord(id) {
       let songLink = data.fields["SongMP3"];
       let = about = data.fields["About"];
       let album = data.fields["AlbumPhoto1"];
-
+      let header = data.fields["Header"];
+      let sentence = "About ";
       let newHtml = `
 
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="Mon-Laferte-PC-Alberto-Hidalgo.jpg" class="d-block w-100 h-100" alt="...">
-      </div>
-    </div>
-  </div>
+
   
-        <div class="row cardImageText center p-5 fill">
+      <div class="row cardImageText center p-3 fill">
         <div class=" info lacquer-regular">
-        <div class="artist-name lacquer-regular ">
+        <div class="artist-name dm-sans">
             <div>${name}</div>
         </div>
       </div>
       </div>
         </div>
 
-      <div class="rol  p-5 artists-background ">
-        ${
-          artistPhoto
-            ? `<img class="artists-img2" src="${album[0].url}">`
-            : ``
-        }
+      <div class="rol  p-1 artists-background center">
+                <div class="font2">${song}</div>
+        ${album ? `<img class="artists-img2" src="${album[0].url}">` : ``}
      <div class="p-5">   
         <audio controls class="audio-position">
           <source src="${songLink[0].url}" type="audio/mpeg">
         </audio>
      </div>
 
-
-      </div>
+     <div class="about-section dm-sans">
+       <h2>${sentence}${name}</h2>
+        <div>${about}</div>
+      </div>  
+      ${
+        artistPhoto
+          ? `<img class="artist-about center" src="${header[0].url}">`
+          : ``
+      }
+    
+     
 
 
         
     `;
-        
 
       musicResultElement.innerHTML = newHtml;
     });

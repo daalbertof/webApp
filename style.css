@@ -1,5 +1,5 @@
 .color{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(5, 5, 5);
     background-image: url("n/a");
     background-size: 300px;
     background-position-y: 60px;
@@ -13,11 +13,19 @@
     size-adjust: 400px;
 }
 
+.about-section{
+    padding: 150px;
+}
+
+.song-tittle{
+    left: 70px;
+    top: 70px;
+    right: 900px;
+}
+
 .audio-position{
     position: relative;
-    left: 20px;
-    top: 50px;
-    width: 540px;
+    width: 400px;
 }
 
 h1{
@@ -42,50 +50,56 @@ h1{
     border: 6px solid #989191;
     height: auto;
     width: 440px;
+    box-shadow: 10px 5px 100px rgba(252, 252, 252, 0.5);
 }
 
-.artists-background{
-    background-image: url("n/a");
-    background-repeat: no-repeat;
-    background-position-x: left 50px;
-    background-size: 470px;
-    border-radius: 50px;
-    border: 6px solid #989191;
-}
 
 .center{
     background-position: center;
     position: relative;
     text-align: center;
-
 }
 
 .artist-name{
-    background-image: url("rayas.jpg");
-    background-repeat: no-repeat;
+    top: -50px;
     text-align: center;
     background-position: center;
-    font-size: 39px;
+    font-size: 70px;
 }
 
 
 /*to make the second image smaller and move it to the right*/
 .artists-img2{    
     position: relative;
-    left: 70px;
-    top: 100px;
-    width: 540px;
+    top: 20px;
+    width: 400px;
     height: auto;
     position: relative;
-    border-radius: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 100px rgba(255, 255, 255, 0.5);
+
+}
+
+
+.artist-about{
+    position: relative;
+    width: 650px;
+    top: -80px;
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 2px 100px rgba(155, 143, 143, 0.5);
 }
 
 /*to center the text in the info section*/
 .info{
+    background-image: url(tape2.png);
     background-repeat: no-repeat;
     text-align: center;
 
 }
+
+
 
 
 /* DM Sans Font */
@@ -94,13 +108,24 @@ h1{
   font-optical-sizing: auto;
   font-weight: 20px;
   font-style: normal;
+  color: white;
 }
 
 
-.lacquer-regular {
-  font-family: "Lacquer", system-ui;
-  font-weight: 400;
+.font2{
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 20px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.font3 {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 20px;
   font-style: normal;
 }
-
 
