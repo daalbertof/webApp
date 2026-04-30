@@ -1,6 +1,6 @@
 .color{
-    background-color: rgb(203, 203, 203);
-    background-image: url("oja.png");
+    background-color: rgb(255, 255, 255);
+    background-image: url("n/a");
     background-size: 300px;
     background-position-y: 60px;
     background-repeat: no-repeat;
@@ -15,26 +15,42 @@
 
 .audio-position{
     position: relative;
-    left: 50px;
-    top: 20px;
+    left: 20px;
+    top: 50px;
+    width: 540px;
 }
 
 h1{
     text-align: center;
 }
 
+/*to make the song card with the image of the cd and the info of the song*/
 .song-card{
     background-image: url("cd.png");
-    background-size: 600px;
+    background-size: 520px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:left 20px;
+    position: relative;
+}
+
+/*to make the first image smaller and move it to the right*/
+.artists-img{    
+    position: relative;
+    left: 34px;
+    top: -7px;
+    border-radius: 11px;
+    border: 6px solid #989191;
+    height: auto;
+    width: 440px;
 }
 
 .artists-background{
-    background-image: url("polaroid-Frame.png");
+    background-image: url("n/a");
     background-repeat: no-repeat;
     background-position-x: left 50px;
-    background-size: 670px;
+    background-size: 470px;
+    border-radius: 50px;
+    border: 6px solid #989191;
 }
 
 .center{
@@ -52,23 +68,16 @@ h1{
     font-size: 39px;
 }
 
-.artists-img{    
-    position: relative;
-    left: 34px;
-    top: -7px;
-    border-radius: 11px;
-    border: 6px solid #989191;
-    height: auto;
-}
 
 /*to make the second image smaller and move it to the right*/
 .artists-img2{    
     position: relative;
     left: 70px;
-    top: 10px;
+    top: 100px;
     width: 540px;
     height: auto;
     position: relative;
+    border-radius: 40px;
 }
 
 /*to center the text in the info section*/

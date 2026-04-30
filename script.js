@@ -22,17 +22,16 @@ async function getAllRecords() {
         let name = data.records[i].fields["Name"]; //here we are using the Field ID to fecth the name property
         let song = data.records[i].fields["Song"];
         let genre = data.records[i].fields["Genre"];
-        let album = data.records[i].fields["AlbumPhoto1"];
+        let album = data.records[i].fields["AlbumPhoto2"];
 
         newHtml += `
         
-        <div class="col cardImageText p-2 song-card center">
+        <div class="col p-5 song-card center">
         <a href = "index.html?id=${data.records[i].id}">${
           album
             ? `<img class="artists-img" src="${album[0].url}" ></img>` // Add album ALT!!!!!
             : ``
-        }
-        </a>
+        }</a>
         </div>
       
         <div class="info dm-sans">
@@ -74,9 +73,20 @@ async function getOneRecord(id) {
       let song = data.fields["Song"];
       let genre = data.fields["Genre"];
       let songLink = data.fields["SongMP3"];
+      let = about = data.fields["About"];
+      let album = data.fields["AlbumPhoto1"];
 
       let newHtml = `
-        <div class="row cardImageText center p-5">
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Mon-Laferte-PC-Alberto-Hidalgo.jpg" class="d-block w-100 h-100" alt="...">
+      </div>
+    </div>
+  </div>
+  
+        <div class="row cardImageText center p-5 fill">
         <div class=" info lacquer-regular">
         <div class="artist-name lacquer-regular ">
             <div>${name}</div>
@@ -88,11 +98,11 @@ async function getOneRecord(id) {
       <div class="rol  p-5 artists-background ">
         ${
           artistPhoto
-            ? `<img class="artists-img2" src="${artistPhoto[0].url}">`
+            ? `<img class="artists-img2" src="${album[0].url}">`
             : ``
         }
-     <div class=" col p-5 audio-position">   
-        <audio controls>
+     <div class="p-5">   
+        <audio controls class="audio-position">
           <source src="${songLink[0].url}" type="audio/mpeg">
         </audio>
      </div>
