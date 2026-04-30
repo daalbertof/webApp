@@ -75,6 +75,10 @@ async function getOneRecord(id) {
       let = about = data.fields["About"];
       let album = data.fields["AlbumPhoto1"];
       let header = data.fields["Header"];
+      let album2 = data.fields["AlbumPhoto2"];
+      let album3 = data.fields["Album3"];
+      let albumName = data.fields["AlbumRec2"];
+      
       let sentence = "About ";
       let newHtml = `
 
@@ -108,6 +112,29 @@ async function getOneRecord(id) {
           : ``
       }
     
+    <div>
+      <h3>Other Albums by ${name}</h3>
+    <div class="row center p-5">
+        <div class="col">
+          <div class="card center" style="width: 18rem;">
+            <img src="${album2[0].url}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${albumName}</h5>
+              <p class="card-text">Song: By ${name}</p>
+            </div>
+          </div>
+        </div>
+
+         <div class="col">
+          <div class="card center" style="width: 18rem;">
+            <img src="${album2[0].url}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${albumName}</h5>
+              <p class="card-text">Song: By ${name}</p>
+            </div>
+          </div>
+        </div>
+    </div>
      
 
 

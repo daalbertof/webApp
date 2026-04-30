@@ -13,6 +13,11 @@
     size-adjust: 400px;
 }
 
+.album-card{
+    background-color: rgb(22, 23, 23);
+ 
+}
+
 .about-section{
     padding: 150px;
 }
