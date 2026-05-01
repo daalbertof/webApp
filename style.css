@@ -19,7 +19,6 @@
 }
 
 
-
 .about-section{
     padding: 150px;
 }
@@ -30,12 +29,16 @@
     right: 900px;
 }
 
-.audio-position{
+.audio-position {
     position: relative;
-    width: 100%;
-     height: auto;
+    width: 100%;      /* Grow with the container */
+    max-width: 500px; /* But don't go past 500px */
+    margin: 10px auto;
+}
 
-    }
+.audio-position audio {
+    width: 100%;      /* The player itself fills the div */
+}
 
 h1{
     text-align: center;
@@ -91,17 +94,20 @@ h1{
 }
 
 
-.artist-about{
+.artist-about {
     position: relative;
-    width: 650px;
+    max-width: 650px; 
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     top: -80px;
     height: auto;
-    position: relative;
     border-radius: 20px;
     box-shadow: 2px 2px 100px rgba(155, 143, 143, 0.5);
 }
 
-/*to center the text in the info section*/
+
 .info{
     background-image: url(tape2.png);
     background-repeat: no-repeat;
@@ -109,7 +115,10 @@ h1{
 
 }
 
-
+footer{
+    background-color: rgb(197, 197, 197);
+    color: rgb(4, 4, 4);
+}
 
 
 /* DM Sans Font */

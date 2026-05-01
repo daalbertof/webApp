@@ -142,7 +142,7 @@ async function getOneRecord(id) {
           </div>
         </div>
 
-                 <div class="col">
+         <div class="col">
           <div class="card center" style="width: 18rem;">
             <img src="${album4[0].url}" class="card-img-top" alt="...">
             <div class="card-body">
@@ -152,7 +152,7 @@ async function getOneRecord(id) {
           </div>
         </div>
  
-                 <div class="col">
+          <div class="col">
           <div class="card center" style="width: 18rem;">
             <img src="${album5[0].url}" class="card-img-top" alt="...">
             <div class="card-body">
