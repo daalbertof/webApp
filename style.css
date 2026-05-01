@@ -18,6 +18,8 @@
  
 }
 
+
+
 .about-section{
     padding: 150px;
 }
@@ -30,8 +32,10 @@
 
 .audio-position{
     position: relative;
-    width: 400px;
-}
+    width: 100%;
+     height: auto;
+
+    }
 
 h1{
     text-align: center;

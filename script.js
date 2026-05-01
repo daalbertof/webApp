@@ -72,13 +72,20 @@ async function getOneRecord(id) {
       let song = data.fields["Song"];
       let genre = data.fields["Genre"];
       let songLink = data.fields["SongMP3"];
-      let = about = data.fields["About"];
+      let about = data.fields["About"];
       let album = data.fields["AlbumPhoto1"];
       let header = data.fields["Header"];
       let album2 = data.fields["AlbumPhoto2"];
       let album3 = data.fields["Album3"];
       let albumName = data.fields["AlbumRec2"];
       let albumName3 = data.fields["AlbumName3"];
+
+
+      let albumName4 = data.fields["AlbumName4"];
+      let album4 = data.fields["Album4"];
+      let albumName5 = data.fields["AlbumName5"];
+      let album5 = data.fields["Album5"];
+
       let sentence = "About ";
       let newHtml = `
 
@@ -94,7 +101,7 @@ async function getOneRecord(id) {
         </div>
 
       <div class="rol  p-1 artists-background center">
-                <div class="font2">${song}</div>
+                <div class="font2 center">${song}</div>
         ${album ? `<img class="artists-img2" src="${album[0].url}">` : ``}
      <div class="p-5">   
         <audio controls class="audio-position">
@@ -113,14 +120,14 @@ async function getOneRecord(id) {
       }
   
     <div>
-      <h3>Other Albums by ${name}</h3>
+    <h3>Other Albums by ${name}</h3>
     <div class="row center p-5">
         <div class="col">
           <div class="card center" style="width: 18rem;">
             <img src="${album2[0].url}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${albumName}</h5>
-              <p class="card-text">Song: By ${name}</p>
+              <p class="card-text">Album: By ${name}</p>
             </div>
           </div>
         </div>
@@ -130,27 +137,27 @@ async function getOneRecord(id) {
             <img src="${album3[0].url}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">${albumName3}</h5>
-              <p class="card-text">Song: By ${name}</p>
+              <p class="card-text">Album: By ${name}</p>
             </div>
           </div>
         </div>
 
                  <div class="col">
           <div class="card center" style="width: 18rem;">
-            <img src="${album3[0].url}" class="card-img-top" alt="...">
+            <img src="${album4[0].url}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">${albumName3}</h5>
-              <p class="card-text">Song: By ${name}</p>
+              <h5 class="card-title">${albumName4}</h5>
+              <p class="card-text">Album: By ${name}</p>
             </div>
           </div>
         </div>
-
+ 
                  <div class="col">
           <div class="card center" style="width: 18rem;">
-            <img src="${album3[0].url}" class="card-img-top" alt="...">
+            <img src="${album5[0].url}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">${albumName3}</h5>
-              <p class="card-text">Song: By ${name}</p>
+              <h5 class="card-title">${albumName5}</h5>
+              <p class="card-text">Album: By ${name}</p>
             </div>
           </div>
         </div>
