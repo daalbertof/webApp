@@ -107,11 +107,11 @@ async function getOneRecord(id) {
         <div>${about}</div>
       </div>  
       ${
-        artistPhoto
+        header
           ? `<img class="artist-about center" src="${header[0].url}">`
           : ``
       }
-    
+  
     <div>
       <h3>Other Albums by ${name}</h3>
     <div class="row center p-5">
@@ -126,6 +126,26 @@ async function getOneRecord(id) {
         </div>
 
          <div class="col">
+          <div class="card center" style="width: 18rem;">
+            <img src="${album3[0].url}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${albumName3}</h5>
+              <p class="card-text">Song: By ${name}</p>
+            </div>
+          </div>
+        </div>
+
+                 <div class="col">
+          <div class="card center" style="width: 18rem;">
+            <img src="${album3[0].url}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">${albumName3}</h5>
+              <p class="card-text">Song: By ${name}</p>
+            </div>
+          </div>
+        </div>
+
+                 <div class="col">
           <div class="card center" style="width: 18rem;">
             <img src="${album3[0].url}" class="card-img-top" alt="...">
             <div class="card-body">
